@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+body{
+    background-color: #e0e0e0;
+}
+
+header{
+    text-align: center;
+    margin: 15px;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+
+.blockList{
+    float: left;
+    width: 68%;
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 5%;
+    margin-right: 40px;
+}
+
+.block{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    transition: 300ms;
+}
+
+.block:hover{
+    box-shadow: 2px 2px 2px #393939;
+}
+
+.block img{
+    width: 90%;
+}
+
+.block p{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.block button{
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ad7906;
+    color: #ad7906;
+    margin-top: 15px;
+}
+
+.block button:hover{
+    box-shadow: 2px 2px 2px orange;
+}
+
+.block button:active{
+    background-color: #ad7906;
+    color: white;
+}
+
+.block span{
+    display: block;
+    margin-top: 15px;
+}
+
+.basketContainer{
+    position: relative;
+    min-height: 300px;
+    float: right;
+    text-align: center;
+    width: 25%;
+    background-color: white;
+}
+
+.stuff img{
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.stuff{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+}
+
+.remove{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.remove:hover{
+    box-shadow: 2px 2px 2px #a30404;
+    font-weight: bold;
+}
+
+.remove:active{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.bottomBasket{
+    margin-top: 20px;
+}
+
+.finish{
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ad7906;
+    color: #ad7906;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.bottomBasket p{
+    width: 95%;
+}
